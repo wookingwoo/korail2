@@ -18,3 +18,5 @@ develop-eggs
 
 test/korail_idpw.txt
 .idea
+
+.env
