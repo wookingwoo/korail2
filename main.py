@@ -65,10 +65,10 @@ def attempt_reservation(route):
         )
         seat = korail.reserve(trains[0])
         print(
-            f"기차 좌석 예약 성공! {DEP_STATION} -> {ARR_STATION}, 날짜: {TRAVEL_DATE}, 시간: {TRAVEL_TIME}\n좌석: {seat}"
+            f"\n기차 좌석 예약 성공! {DEP_STATION} -> {ARR_STATION}, 날짜: {TRAVEL_DATE}, 시간: {TRAVEL_TIME}\n좌석: {seat}"
         )
         send_slack_message(
-            f"기차 좌석 예약 성공! {DEP_STATION} -> {ARR_STATION}, 날짜: {TRAVEL_DATE}, 시간: {TRAVEL_TIME}\n좌석: {seat}"
+            f":tada: 기차 좌석 예약 성공! {DEP_STATION} -> {ARR_STATION}, 날짜: {TRAVEL_DATE}, 시간: {TRAVEL_TIME}\n좌석: {seat}"
         )
         return True
 
